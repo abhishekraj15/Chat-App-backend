@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(
   cors({
-    origin: "*",
+    origin: "https://chat-app-frontend-rosy-mu.vercel.app/",
     credentials: true,
   })
 );
