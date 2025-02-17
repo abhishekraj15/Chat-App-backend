@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(
   cors({
-    origin: "https://chat-app-frontend-rosy-mu.vercel.app/",
+    origin: "*",
     credentials: true,
   })
 );
@@ -39,7 +39,7 @@ const server = app.listen(PORT, () => {
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://chat-app-frontend-rosy-mu.vercel.app/",
+    origin: "*",
     credentials: true,
   },
 });
